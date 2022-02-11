@@ -1,0 +1,52 @@
+{
+  "title": "RecordData",
+  "description": "Data schema for importing metadata into ADS pipeline",
+  "type": "object",
+  "properties": {
+    "createdTime": {
+      "description": "Timestamp for when the metadata was harvested (e.g. file created timestamp)",
+      "type": "string"
+    },
+    "parsedTime": {
+      "description": "Timestamp for when parsing commenced.",
+      "type": "string"
+    },
+    "loadType": {
+      "description": "ENUM: do we get this from a file or from a URL (or other?)",
+      "$comment": "This list may need to be expanded.",
+      "type": "string",
+      "enum": [
+        "fromFile",
+        "fromURL"
+      ]
+    },
+    "loadFormat": {
+      "description": "ENUM:",
+      "$comment": "This list may need to be expanded.",
+      "type": "string",
+      "enum": [
+        "JATS",
+        "OtherXML",
+        "HTML",
+        "Text"
+      ]
+    },
+    "loadLocation": {
+      "description": "If loadtype is fromFile, path to file; if fromURL, it's a URL",
+      "type": "string"
+    },
+    "recordOrigin": {
+      "description": "Provider of record (e.g. Publisher, STI, arXiv)",
+      "type": "string"
+    }
+  },
+  "required": [
+    "createdTime",
+    "parsedTime",
+    "loadType",
+    "loadFormat",
+    "loadLocation",
+    "recordOrigin"
+  ],
+  "additionalProperties": false
+}

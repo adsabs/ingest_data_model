@@ -1,0 +1,30 @@
+{
+  "title": "PersistentID",
+  "description": "Holds one or more persistent identifiers",
+  "type": "object",
+  "properties": {
+    "Crossref": {
+      "type": "string"
+    },
+    "ISBN": {
+      "type": "string"
+    },
+    "DOI": {
+      "$comment": "Borrowed from arxiv spec https://github.com/arXiv/arxiv-canonical/blob/develop/schema-extended/arxiv-extended.json",
+      "type": "string",
+      "pattern": "^10\\.\\d+(\\.\\d+)?/\\S+$",
+      "minLength": 1
+    },
+    "preprint": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "identifier": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Comment",
+  "description": "Stores one comment along with information about its origin",
+  "type": "object",
+  "properties": {
+    "commentOrigin": {
+      "type": "string"
+    },
+    "commentText": {
+      "type": "string"
+    }
+  }
+}

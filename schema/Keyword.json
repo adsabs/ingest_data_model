@@ -1,0 +1,24 @@
+{
+  "title": "Keyword",
+  "description": "Holds an individual text keyword, along with its type (e.g. AAS), and/or a numeric keyword if provided (e.g. PACS)",
+  "type": "object",
+  "properties": {
+    "keyString": {
+      "type": "string"
+    },
+    "keySystem": {
+      "type": "string"
+    },
+    "keyIdent": {
+      "type": "object",
+      "properties": {
+        "system": {
+          "type": "string"
+        },
+        "keyID": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "OtherContrib",
+  "description": "Describes a person and provides a field for their role (e.g. advisor, conference org. cmte, etc)",
+  "type": "object",
+  "properties": {
+    "contrib": {
+      "$ref": "./Contrib.json"
+    },
+    "role": {
+      "type": "string"
+    }
+  }
+}

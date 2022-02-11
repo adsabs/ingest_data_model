@@ -1,0 +1,19 @@
+{
+  "title": "Affil",
+  "description": "Object to hold a single affiliation.  Each Contrib object will have an array of these.",
+  "type": "object",
+  "properties": {
+    "affPubRaw": {
+      "description": "Affil string from publisher.",
+      "type": "string"
+    },
+    "affPubID": {
+      "description": "Affil ID",
+      "type": "string"
+    },
+    "affPubIDType": {
+      "description": "Affil ID system (ror, grid, ads etc...)",
+      "type": "string"
+    }
+  }
+}

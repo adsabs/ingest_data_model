@@ -1,0 +1,29 @@
+{
+  "title": "OpenAccess",
+  "description": "Publisher-provided OA data",
+  "type": "object",
+  "$comment": "Some of these may get removed if they're not received with each metadata file/object (e.g. embargo)",
+  "properties": {
+    "open": {
+      "type": "boolean"
+    },
+    "license": {
+      "type": "string"
+    },
+    "licenseURL": {
+      "type": "string"
+    },
+    "preprint": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "string"
+    },
+    "endDate": {
+      "type": "string"
+    },
+    "embargoLength": {
+      "type": "string"
+    }
+  }
+}

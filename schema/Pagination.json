@@ -1,0 +1,22 @@
+{
+  "title": "Pagination",
+  "description": "Data schema for importing metadata into ADS pipeline",
+  "type": "object",
+  "properties": {
+    "firstPage": {
+      "type": "string"
+    },
+    "lastPage": {
+      "type": "string"
+    },
+    "pageCount": {
+      "type": "string"
+    },
+    "pageRange": {
+      "type": "string"
+    },
+    "electronicID": {
+      "type": "string"
+    }
+  }
+}

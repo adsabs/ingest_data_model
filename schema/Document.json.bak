@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Document",
+  "description": "Data schema for importing metadata into ADS pipeline",
+  "type": "object",
+  "properties": {
+    "recordData": {
+      "$ref": "./RecordData.json"
+    },
+    "relatedTo": {
+      "$ref": "./RelatedTo.json"
+    },
+    "editorialHistory": {
+      "$ref": "./EdHist.json"
+    },
+    "pubDate": {
+      "$ref": "./PubDates.json"
+    },
+    "publication": {
+      "$ref": "./Publication.json"
+    },
+    "persistentIDs": {
+      "type": "array",
+      "description": "Array of PersistentID.json objects",
+      "items": {
+        "$ref": "./PersistentID.json"
+      }
+    },
+    "pagination": {
+      "$ref": "./Pagination.json"
+    },
+    "authors": {
+      "type": "array",
+      "description": "Array of Contrib objects",
+      "items": {
+        "$ref": "./Contrib.json"
+      }
+    },
+    "otherContributor": {
+      "type": "array",
+      "description": "Array of Contrib/role pairs",
+      "items": {
+        "$ref": "./OtherContrib.json"
+      }
+    },
+    "title": {
+      "type": "object",
+      "properties": {
+        "textEnglish": {
+          "type": "string"
+        },
+        "textNative": {
+          "type": "string"
+        },
+        "langNative": {
+          "type": "string"
+        }
+      }
+    },
+    "abstract": {
+      "type": "object",
+      "properties": {
+        "textEnglish": {
+          "type": "string"
+        },
+        "textNative": {
+          "type": "string"
+        },
+        "langNative": {
+          "type": "string"
+        }
+      }
+    },
+    "fulltext": {
+      "type": "object",
+      "description": "Contains the body of the fulltext document, and its language",
+      "$comment": "Body is free format and could (for example) contain the entire file",
+      "properties": {
+        "language": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      }
+    },
+    "acknowledgements": {
+      "type": "string",
+      "description": "Acknowledgements, if fielded separately from body"
+    },
+    "references": {
+      "type": "array",
+      "description": "List of references in free text format",
+      "items": {
+        "type": "string"
+      }
+    },
+    "backmatter": {
+      "type": "array",
+      "description": "Appendices, Supplementary material.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "backType": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "astronomicalObjects": {
+      "type": "array",
+      "description": "List of astronomical objects in free text format",
+      "items": {
+        "type": "string"
+      }
+    },
+    "esources": {
+      "type": "array",
+      "description": "Array of ESource.json objects",
+      "items": {
+        "$ref": "./ESource.json"
+      }
+    },
+    "doctype": {
+      "type": "string",
+      "description": "This will only be required if we set doctype at parsing",
+      "enum": [
+        "article",
+        "thesis",
+        "software",
+        "book",
+        "proceedings",
+        "catalog",
+        "nonarticle",
+        "data"
+      ]
+    },
+    "keywords": {
+      "type": "array",
+      "description": "Array of Keyword.json objects",
+      "items": {
+        "$ref": "./Keyword.json"
+      }
+    },
+    "copyright": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "boolean"
+        },
+        "statement": {
+          "statement": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "openAccess": {
+      "$ref": "./OpenAccess.json"
+    },
+    "pubnote": {
+      "type": "string"
+    },
+    "funding": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "recordData",
+    "pubDate",
+    "title",
+    "publication"
+  ]
+}

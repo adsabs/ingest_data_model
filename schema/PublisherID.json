@@ -1,0 +1,13 @@
+{
+  "title": "PublisherID",
+  "description": "Holds one publisher identifier, e.g. 'manuscript number'",
+  "type": "object",
+  "properties": {
+    "attribute": {
+      "type": "string"
+    },
+    "Identifier": {
+      "type": "string"
+    }
+  }
+}

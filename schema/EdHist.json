@@ -1,0 +1,24 @@
+{
+  "title": "EdHist",
+  "description": "Holds editorial history; papers can have multiple received/revised dates.",
+  "type": "object",
+  "properties": {
+    "receivedDates": {
+      "description": "papers can have more than one receivedDate",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "revisedDates": {
+      "description": "papers can have more than one revisedDate",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptedDate": {
+      "type": "string"
+    }
+  }
+}

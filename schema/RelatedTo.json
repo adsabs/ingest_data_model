@@ -1,0 +1,33 @@
+{
+  "title": "RelatedTo",
+  "description": "Holds information about whether this Document is related to another (e.g. erratum)",
+  "type": "object",
+  "properties": {
+    "relationship": {
+      "type": "string",
+      "enum": [
+        "addenda",
+        "ascl",
+        "catalog",
+        "collection",
+        "commentary",
+        "editions",
+        "errata",
+        "press",
+        "proposal",
+        "related",
+        "report",
+        "reprint",
+        "retraction",
+        "series",
+        "supplement",
+        "translation",
+        "updated"
+      ]
+    },
+    "relatedDocID": {
+      "description": "raw string from publisher (e.g. doi)",
+      "type": "string"
+    }
+  }
+}

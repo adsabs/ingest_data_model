@@ -1,0 +1,66 @@
+{
+  "title": "Publication",
+  "type": "object",
+  "$comments": "Contains what would go into the %J field in Classic",
+  "properties": {
+    "docType": {
+      "type": "string",
+      "enum":[
+        "article",
+        "thesis",
+        "software",
+        "book",
+        "inbook",
+        "proceedings",
+        "inproceedings",
+        "catalog",
+        "data",
+        "report",
+        "proposal",
+        "miscellaneous"
+      ]
+    },
+    "pubName": {
+      "type": "string"
+    },
+    "confName": {
+      "type": "string"
+    },
+    "confLocation": {
+      "type": "string"
+    },
+    "confDates": {
+      "type": "string"
+    },
+    "confEditors": {
+      "type": "array",
+      "items": {
+        "$ref": "./Contrib.json"
+      }
+    },
+    "confPID": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "issueNum": {
+      "type": "string"
+    },
+    "volumeNum": {
+      "type": "string"
+    },
+    "pubYear": {
+      "type": "string"
+    },
+    "ISSN": {
+      "type": "array",
+      "items": {
+         "$ref": "./IssnType.json"
+      }
+    },
+    "isRefereed": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "DataLink",
+  "description": "Holds a single data link and its related information",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "dataType": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}

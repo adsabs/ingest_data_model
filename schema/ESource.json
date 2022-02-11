@@ -1,0 +1,22 @@
+{
+  "title": "ESource",
+  "description": "Stores the location of any fulltext document not provided with the metadata (e.g. dois)",
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "string",
+      "enum": [
+        "pub_html",
+        "pub_pdf",
+        "eprint_pdf",
+        "eprint_html",
+        "author_pdf",
+        "author_html"
+      ]
+    },
+    "location": {
+      "$comment": "URL, URI, DOI, etc",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "title": "Contrib",
+  "description": "Describes a person in any role (author, editor, conf/OC member, etc)",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "object",
+      "properties": {
+        "surname": {
+          "type": "string"
+        },
+        "given-name": {
+          "type": "string"
+        },
+        "middle-name": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string"
+        },
+        "suffix": {
+          "type": "string"
+        },
+        "pubraw": {
+          "type": "string"
+        },
+        "native-lang": {
+          "type": "string"
+        },
+        "collab": {
+          "type": "string"
+        }
+      }
+    },
+    "affiliation": {
+      "type": "array",
+      "items": {
+        "$ref": "./Affil.json"
+      }
+    },
+    "attrib": {
+      "type": "object",
+      "properties": {
+        "collab": {
+          "type": "boolean"
+        },
+        "deceased": {
+          "type": "boolean"
+        },
+        "coauthor": {
+          "type": "boolean"
+        },
+        "email": {
+          "type": "string"
+        },
+        "funding": {
+          "type": "string"
+        },
+        "orcid": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{4}-\\d{4}-\\d{3}[0-9X]$"
+        }
+      }
+    }
+  }
+}
