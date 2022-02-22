@@ -9,11 +9,6 @@ except ImportError:
 with open('requirements.txt') as f:
     required = f.read().splitlines()
 
-try:
-    with open('dev-requirements.txt') as f:
-        dev_required = f.read().splitlines()
-except Exception as err:
-    dev_required = None
 
 def get_git_version(default="v0.0.1"):
     try:
@@ -38,6 +33,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     platforms='any',
+    install_requires=required,
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
