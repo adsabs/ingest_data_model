@@ -20,6 +20,9 @@ def get_git_version(default="v0.0.1"):
     except:
         return default
 
+with open('README.md', 'r') as fd:
+    long_description = fd.read()
+
 setup(
     name='ingest_data_model',
     version=get_git_version(default="v0.0.1"),
@@ -27,7 +30,7 @@ setup(
     license='MIT',
     author='NASA/SAO ADS',
     description='JSON Schema for ADS Ingest Data',
-    long_description=__doc__,
+    long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
     zip_safe=False,
