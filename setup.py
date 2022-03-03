@@ -33,6 +33,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
+    package_data={'schema': ['*.json']},
     zip_safe=False,
     include_package_data=True,
     platforms='any',
