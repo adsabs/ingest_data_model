@@ -4,7 +4,7 @@ from glob import glob
 from jsonschema import Draft7Validator, RefResolver
 
 
-schema_path = os.path.abspath('./schema')
+schema_path = os.path.abspath('./adsingestschema')
 
 class LoadResolverException(Exception):
     pass
