@@ -48,7 +48,7 @@ def main():
     try:
         validator = ValidationTool()
     except Exception as err:
-        print('Cannot validate, problem loading adsingestschema: %s' % err)
+        print('Cannot validate, problem loading schema: %s' % err)
     else:
         for f in test_files:
             print('\n\n\n\n\nTesting file %s' % f)
