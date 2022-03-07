@@ -4,7 +4,7 @@ from glob import glob
 from jsonschema import Draft7Validator, RefResolver
 
 
-schema_path = os.path.abspath('./schema')
+schema_path = os.path.abspath('./adsingestschema')
 
 class LoadResolverException(Exception):
     pass
@@ -48,7 +48,7 @@ def main():
     try:
         validator = ValidationTool()
     except Exception as err:
-        print('Cannot validate, problem loading schema: %s' % err)
+        print('Cannot validate, problem loading adsingestschema: %s' % err)
     else:
         for f in test_files:
             print('\n\n\n\n\nTesting file %s' % f)
