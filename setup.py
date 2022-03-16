@@ -24,7 +24,7 @@ with open('README.md', 'r') as fd:
     long_description = fd.read()
 
 setup(
-    name='ingest_data_model',
+    name='adsingestschema',
     version=get_git_version(default="v0.0.1"),
     url='http://github.com/adsabs/ingest_data_model/',
     license='MIT',
