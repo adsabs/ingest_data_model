@@ -9,11 +9,15 @@
     "printDate": {
       "type": "string"
     },
-    "otherPubDate": {
-      "type": "object",
-      "properties": {
-        "otherDateType": "string",
-        "otherDate": "string"
+    "otherDate": {
+      "type": "array",
+      "description": "Array of date-like objects (e.g. 'submitted', 'revised', 'accepted')",
+      "items": {
+        "type": "object",
+        "properties": {
+          "otherDateType": "string",
+          "otherDateValue": "string"
+        }
       }
     }
   }
