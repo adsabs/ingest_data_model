@@ -15,8 +15,12 @@
       "items": {
         "type": "object",
         "properties": {
-          "otherDateType": "string",
-          "otherDateValue": "string"
+          "otherDateType": {
+            "type": "string"
+          },
+          "otherDateValue": {
+            "type": "string"
+          }
         }
       }
     }
