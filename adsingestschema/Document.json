@@ -8,7 +8,11 @@
       "$ref": "./RecordData.json"
     },
     "relatedTo": {
-      "$ref": "./RelatedTo.json"
+      "type": "array",
+      "description": "Array of RelatedTo.json objects",
+      "items": {
+        "$ref": "./RelatedTo.json"
+      }
     },
     "editorialHistory": {
       "$ref": "./EdHist.json"
