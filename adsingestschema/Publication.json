@@ -53,6 +53,17 @@
     "pubYear": {
       "type": "string"
     },
+    "bookSeries": {
+      "type": "object",
+      "properties": {
+        "seriesName": {
+          "type": "string"
+        },
+        "seriesID": {
+          "type": "string"
+        }
+      }
+    },
     "ISSN": {
       "type": "array",
       "items": {

@@ -7,7 +7,10 @@
       "type": "string"
     },
     "ISBN": {
-      "type": "string"
+      "type": "array",
+      "items": {
+         "$ref": "./IsbnType.json"
+      }
     },
     "DOI": {
       "$comment": "Borrowed from arxiv spec https://github.com/arXiv/arxiv-canonical/blob/develop/schema-extended/arxiv-extended.json",

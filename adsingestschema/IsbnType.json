@@ -1,0 +1,13 @@
+{
+  "title": "IsbnType",
+  "description": "Holds an individual ISBN, with its type (e.g. epub, ppub)",
+  "type": "object",
+  "properties": {
+    "pubtype": {
+      "type": "string"
+    },
+    "issnString": {
+      "type": "string"
+    }
+  }
+}
