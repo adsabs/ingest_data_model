@@ -61,6 +61,9 @@
         },
         "seriesID": {
           "type": "string"
+        },
+        "seriesDescription": {
+          "type": "string"
         }
       }
     },
