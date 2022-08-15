@@ -160,13 +160,25 @@
       "description": "This will only be required if we set doctype at parsing",
       "enum": [
         "article",
-        "thesis",
-        "software",
+        "eprint",
+        "phdthesis",
+        "mastersthesis",
         "book",
+        "inbook",
         "proceedings",
+        "inproceedings",
+        "software",
+        "talk",
+        "abstract",
+        "proposal",
+        "pressrelease",
+        "circular",
+        "newsletter",
         "catalog",
+        "misc",
+        "techreport",
         "nonarticle",
-        "data"
+        "dataset"
       ]
     },
     "keywords": {
