@@ -9,10 +9,10 @@
         "surname": {
           "type": "string"
         },
-        "given-name": {
+        "given_name": {
           "type": "string"
         },
-        "middle-name": {
+        "middle_name": {
           "type": "string"
         },
         "prefix": {
@@ -24,7 +24,7 @@
         "pubraw": {
           "type": "string"
         },
-        "native-lang": {
+        "native_lang": {
           "type": "string"
         },
         "collab": {

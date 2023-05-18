@@ -17,7 +17,7 @@
     {
       "name": {
         "surname": "Kruehler",
-        "given-name": "T."
+        "given_name": "T."
       },
       "affiliation": [
         {
@@ -28,7 +28,7 @@
     {
       "name": {
         "surname": "Greiner",
-        "given-name": "J."
+        "given_name": "J."
       },
       "affiliation": [
         {
@@ -39,7 +39,7 @@
     {
       "name": {
         "surname": "Kann",
-        "given-name": "D.A."
+        "given_name": "D.A."
       },
       "affiliation": [
         {
