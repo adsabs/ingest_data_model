@@ -206,7 +206,11 @@
       "type": "string"
     },
     "funding": {
-      "type": "string"
+      "type": "array",
+      "description": "Array of Funder.json objects",
+      "items": {
+        "$ref": "./Funder.json"
+      }
     },
     "version": {
       "type": "string"

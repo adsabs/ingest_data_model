@@ -1,0 +1,24 @@
+{
+  "title": "Funder",
+  "description": "Describes a funding agency and provides fields for their name,funder ID, and award number cited in the paper",
+  "type": "object",
+  "properties": {
+    "agencyname": {
+      "type": "string"
+    },
+    "agencyid": {
+      "type": "object",
+      "properties": {
+        "idschema": {
+          "type": "string"
+        },
+        "idvalue": {
+          "type": "string"
+        }
+      }
+    },
+    "awardnumber": {
+      "type": "string"
+    }
+  }
+}
