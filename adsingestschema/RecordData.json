@@ -17,7 +17,8 @@
       "type": "string",
       "enum": [
         "fromFile",
-        "fromURL"
+        "fromURL",
+        "fromDB"
       ]
     },
     "loadFormat": {
@@ -28,7 +29,8 @@
         "JATS",
         "OtherXML",
         "HTML",
-        "Text"
+        "Text",
+        "JSON"
       ]
     },
     "loadLocation": {
