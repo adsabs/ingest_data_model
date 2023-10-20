@@ -1,0 +1,23 @@
+{
+  "title": "Title",
+  "description": "Holds the title data, including multiple language fields, and a list to hold any notes/xrefs provided by the publisher",
+  "type": "object",
+  "properties": {
+    "textEnglish": {
+      "type": "string"
+    },
+    "textNative": {
+      "type": "string"
+    },
+    "langNative": {
+      "type": "string"
+    },
+    "textNotes": {
+      "type": "array",
+      "description": "Footnotes and xrefs associated with title(s)",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

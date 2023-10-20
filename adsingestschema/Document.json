@@ -55,21 +55,10 @@
       }
     },
     "title": {
-      "type": "object",
-      "properties": {
-        "textEnglish": {
-          "type": "string"
-        },
-        "textNative": {
-          "type": "string"
-        },
-        "langNative": {
-          "type": "string"
-        }
-      }
+      "$ref": "./Title.json"
     },
     "subtitle": {
-      "type": "string"
+      "$ref": "./Title.json"
     },
     "abstract": {
       "type": "object",
