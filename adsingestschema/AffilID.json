@@ -1,0 +1,16 @@
+{
+  "title": "AffilID",
+  "description": "Object to hold a single institutional identifier.  Each Affil object will have an array of these.",
+  "type": "object",
+  "properties": {
+    "affID": {
+      "description": "Affiliation identifier value",
+      "type": "string"
+    },
+    "affIDType": {
+      "description": "Affiliation identifier system (ROR, GRID, ADS etc...)",
+      "type": "string"
+    }
+  }
+}
+
