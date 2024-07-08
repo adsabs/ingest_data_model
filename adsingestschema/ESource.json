@@ -11,7 +11,9 @@
         "eprint_pdf",
         "eprint_html",
         "author_pdf",
-        "author_html"
+        "author_html",
+        "ads_scan",
+        "ads_pdf"
       ]
     },
     "location": {
