@@ -8,12 +8,10 @@
       "type": "string"
     },
     "affPubID": {
-      "description": "Affil ID",
-      "type": "string"
-    },
-    "affPubIDType": {
-      "description": "Affil ID system (ror, grid, ads etc...)",
-      "type": "string"
+      "type": "array",
+      "items": {
+        "$ref": "./AffilID.json"
+      }
     }
   }
 }
