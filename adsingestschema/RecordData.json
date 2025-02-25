@@ -30,7 +30,11 @@
         "OtherXML",
         "HTML",
         "Text",
-        "JSON"
+        "JSON",
+        "Copernicus",
+        "Elsevier",
+        "IEEE",
+        "Wiley"
       ]
     },
     "loadLocation": {
