@@ -81,19 +81,6 @@
         "$ref": "./Comment.json"
       }
     },
-    "fulltext": {
-      "type": "object",
-      "description": "Contains the body of the fulltext document, and its language",
-      "$comment": "Body is free format and could (for example) contain the entire file",
-      "properties": {
-        "language": {
-          "type": "string"
-        },
-        "body": {
-          "type": "string"
-        }
-      }
-    },
     "acknowledgements": {
       "type": "string",
       "description": "Acknowledgements, if fielded separately from body"
