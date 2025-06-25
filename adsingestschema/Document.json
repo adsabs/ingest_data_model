@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/adsabs/ingest_data_model/refs/heads/main/adsingestschema/Document.json",
   "title": "Document",
   "description": "Data schema for importing metadata into ADS pipeline",
   "type": "object",
@@ -55,10 +56,18 @@
       }
     },
     "title": {
-      "$ref": "./Title.json"
+      "type": "array",
+      "description": "Array of Title.json objects for multilingual support",
+      "items": {
+        "$ref": "./Title.json"
+      }
     },
     "subtitle": {
-      "$ref": "./Title.json"
+      "type": "array",
+      "description": "Array of Title.json objects for multilingual support",
+      "items": {
+        "$ref": "./Title.json"
+      }
     },
     "abstract": {
       "type": "object",
