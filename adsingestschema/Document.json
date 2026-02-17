@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://raw.githubusercontent.com/seasidesparrow/ingest_data_model/refs/tags/v1.0.13/adsingestschema/Document.json",
+  "$id": "https://raw.githubusercontent.com/adsabs/ingest_data_model/refs/tags/v1.0.13/adsingestschema/Document.json",
   "title": "Document",
   "description": "Data schema for importing metadata into ADS pipeline",
   "type": "object",
