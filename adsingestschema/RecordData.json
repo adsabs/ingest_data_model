@@ -7,8 +7,8 @@
       "description": "Timestamp for when the metadata was harvested (e.g. file created timestamp)",
       "type": "string"
     },
-    "parsedTime": {
-      "description": "Timestamp for when parsing commenced.",
+    "dataType": {
+      "description": "Data set, bib data, etc.",
       "type": "string"
     },
     "loadType": {
@@ -41,18 +41,33 @@
       "description": "If loadtype is fromFile, path to file; if fromURL, it's a URL",
       "type": "string"
     },
+    "masterRecord": {
+      "description": "Canonical record identifier with which this object is associated",
+      "type": "string"
+    },
+    "parsedTime": {
+      "description": "Timestamp for when parsing commenced.",
+      "type": "string"
+    },
     "recordOrigin": {
       "description": "Provider of record (e.g. Publisher, STI, arXiv)",
+      "type": "string"
+    },
+    "UUID": {
+      "description": "Internal identifier UUID for this object",
       "type": "string"
     }
   },
   "required": [
     "createdTime",
-    "parsedTime",
-    "loadType",
+    "dataType",
     "loadFormat",
     "loadLocation",
-    "recordOrigin"
+    "loadType",
+    "masterRecord",
+    "parsedTime",
+    "recordOrigin",
+    "UUID"
   ],
   "additionalProperties": false
 }
