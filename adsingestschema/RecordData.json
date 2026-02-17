@@ -8,7 +8,7 @@
       "type": "string"
     },
     "dataType": {
-      "description": "I don't know",
+      "description": "Data set, bib data, etc.",
       "type": "string"
     },
     "loadType": {
