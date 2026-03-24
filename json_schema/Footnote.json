@@ -1,0 +1,16 @@
+{
+  "title": "Footnote",
+  "description": "Object that holds the extracted properties of a footnote",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

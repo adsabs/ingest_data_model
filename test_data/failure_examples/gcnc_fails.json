@@ -8,14 +8,14 @@
     "masterRecord": "",
     "parsedTime": "2021-10-02Z18:50:00",
     "recordOrigin": "Publisher",
-    "UUID": "06994ac1-c50b-7fa0-a500-7f08892d0d0b"
+    "UUID": "06994ac1-c50b-7966-b000-0cb4922cb7ea"
   },
   "pubDate": {
     "electrDate": "2013-04-29"
   },
   "title": [
     {
-      "atext": "GRB 100728A: GROND host detection and X-shooter redshift"
+      "textEnglish": "GRB 100728A: GROND host detection and X-shooter redshift"
     }
   ],
   "authors": [
@@ -76,5 +76,6 @@
       "source": "pub_html",
       "location": "https://gcn.gsfc.nasa.gov/gcn/gcn3/14500.gcn3"
     }
-  ]
+  ],
+  "extra_parameter": "This key-value pair will make the validation fail."
 }
