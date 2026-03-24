@@ -1,0 +1,20 @@
+{
+  "title": "Title",
+  "description": "Holds the title data, including both text and language; for cases of native/english/translated titles, you can represent these with an array of Title objects.",
+  "type": "object",
+  "properties": {
+    "atext": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "footnotes": {
+      "type": "array",
+      "description": "Array of Footnote.json objects",
+      "items": {
+        "$ref": "./Footnote.json"
+      }
+    }
+  }
+}

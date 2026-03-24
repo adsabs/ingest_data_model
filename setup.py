@@ -10,7 +10,7 @@ with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 
-def get_git_version(default="v0.0.1"):
+def get_git_version(default="v1.1.0"):
     try:
         p = Popen(['git', 'describe', '--tags'], stdout=PIPE, stderr=PIPE)
         p.stderr.close()
@@ -24,8 +24,8 @@ with open('README.md', 'r') as fd:
     long_description = fd.read()
 
 setup(
-    name='adsingestschema',
-    version=get_git_version(default="v0.0.1"),
+    name='json_schema',
+    version=get_git_version(default="v1.1.0"),
     url='http://github.com/adsabs/ingest_data_model/',
     license='MIT',
     author='NASA/SAO ADS',
@@ -33,7 +33,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=find_packages(),
-    package_data={'adsingestschema': ['*.json']},
+    package_data={'json_schema': ['*.json']},
     zip_safe=False,
     include_package_data=True,
     platforms='any',

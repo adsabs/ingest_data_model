@@ -27,6 +27,12 @@
         "native_lang": {
           "type": "string"
         },
+        "native_surname": {
+          "type": "string"
+        },
+        "native_given_name": {
+          "type": "string"
+        },
         "collab": {
           "type": "string"
         }
